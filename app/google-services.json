@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889040066231",
+    "project_id": "getfit-f3c72",
+    "storage_bucket": "getfit-f3c72.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889040066231:android:00a73dfcb0fa46fbbd5f32",
+        "android_client_info": {
+          "package_name": "com.example.activity1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK0FehjhMz1rj4RIfM4MoDcee87Fu9ph0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

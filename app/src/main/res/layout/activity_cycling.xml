@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cycling"
+    android:padding="16dp">
+
+    <!-- Title for the Cycling Activity -->
+    <TextView
+        android:id="@+id/tvCyclingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cycling"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Calories Burned Input -->
+    <EditText
+        android:id="@+id/etCaloriesBurned"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Calories Burned"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toStartOf="@id/tvCaloriesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCyclingTitle" />
+
+    <TextView
+        android:id="@+id/tvCaloriesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/etCaloriesBurned"
+        app:layout_constraintTop_toTopOf="@id/etCaloriesBurned"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Pace Input -->
+    <EditText
+        android:id="@+id/etPace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pace (min/mile)"
+        android:inputType="text"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etCaloriesBurned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvPaceLabel"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvPaceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="min/mile"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/etPace"
+        app:layout_constraintTop_toTopOf="@id/etPace"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Distance Input -->
+    <EditText
+        android:id="@+id/etDistance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Distance (miles)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etPace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvDistanceLabel"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvDistanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="miles"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/etDistance"
+        app:layout_constraintTop_toTopOf="@id/etDistance"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Speed Input -->
+    <EditText
+        android:id="@+id/etSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Speed (mph)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvSpeedLabel" />
+
+    <TextView
+        android:id="@+id/tvSpeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mph"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/etSpeed"
+        app:layout_constraintTop_toTopOf="@id/etSpeed"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Time Input (To be updated during the ride) -->
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:inputType="text"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etSpeed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Start Cycling Button -->
+    <Button
+        android:id="@+id/btnStartCycling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Cycling"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/etTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Timer Text (Updated every second during the ride) -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="00:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStartCycling" />
+
+    <!-- Stop Cycling Button -->
+    <Button
+        android:id="@+id/btnStopCycling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Stop Cycling"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer" />
+
+    <!-- Submit Activity Button (Save Data) -->
+    <Button
+        android:id="@+id/btnSubmitCycling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Save Activity"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStopCycling" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
