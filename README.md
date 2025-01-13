@@ -57,6 +57,22 @@ After logging in, users land on the home page, which offers four main options:
 
 ---
 
+## Screenshots
+
+### Home Screen
+![Home Screen](readme-assets/1.png)
+
+### Login Screen
+![Home Screen](readme-assets/4.png)
+
+### Main Screen
+![Main Screen](readme-assets/2.png)
+
+### Activity Screen
+![Activity Screen](readme-assets/3.png)
+
+---
+
 ## Android Components Used
 
 FitTrack demonstrates the implementation of key Android development components:
@@ -77,4 +93,12 @@ FitTrack demonstrates the implementation of key Android development components:
 1. Clone the repository:
    ```bash
    git clone https://github.com/adenis033/FitTrack.git
+
+## Contributors
+
+This project was developed by:
+
+- **RÂPA Denis-Andrei** - [GitHub Profile](https://github.com/adenis033)
+- **BATAGOI Ana-Maria** - [GitHub Profile](https://github.com/anabat27)
+- **AL-RAMAHI Nidal** - [GitHub Profile](https://github.com/ramahii)
 
