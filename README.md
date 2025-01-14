@@ -102,3 +102,7 @@ This project was developed by:
 - **BATAGOI Ana-Maria** - [GitHub Profile](https://github.com/anabat27)
 - **AL-RAMAHI Nidal** - [GitHub Profile](https://github.com/ramahii)
 
+Link to the project:
+
+- [GitHub Link](https://github.com/adenis033/FitTrack)
+
