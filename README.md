@@ -99,8 +99,6 @@ FitTrack demonstrates the implementation of key Android development components:
 This project was developed by:
 
 - **RÂPA Denis-Andrei** - [GitHub Profile](https://github.com/adenis033)
-- **BATAGOI Ana-Maria** - [GitHub Profile](https://github.com/anabat27)
-- **AL-RAMAHI Nidal** - [GitHub Profile](https://github.com/ramahii)
 
 Link to the project:
 
